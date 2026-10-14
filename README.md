@@ -111,9 +111,14 @@ Planned production endpoints:
 
 ### Cleaned fabric dataset
 
-The backend can read the cleaned image folders directly from disk; the images do not
-need to be copied into the frontend. Set `DATASET_DIR` in `backend/.env` to the
-cleaned dataset root. For example:
+The repository includes a balanced sample of 782 cleaned images (about 233 MB)
+across the five fabric categories under `dataset/cleaned/`. Images are stored
+with Git LFS. Install Git LFS before cloning so they are downloaded; if you
+already cloned without LFS, run `git lfs pull` from the repository root. The
+full local dataset is larger and is not included. The backend reads the included
+folders directly from disk; the images do not need to be copied into the
+frontend. Set `DATASET_DIR` in `backend/.env` to the cleaned dataset root. For
+example:
 
 ```dotenv
 DATASET_DIR="C:/Users/visha/Desktop/weave data/FinalFabric/cleaned"

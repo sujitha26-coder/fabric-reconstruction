@@ -20,7 +20,9 @@ backend/.env
 *.db
 *.sqlite
 *.sqlite3
-dataset/
+dataset/*
+!dataset/cleaned/
+!dataset/cleaned/**
 uploads/
 outputs/
 runtime-logs/
