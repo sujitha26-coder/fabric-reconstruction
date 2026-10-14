@@ -1,0 +1,28 @@
+node_modules/
+frontend/node_modules/
+frontend/dist/
+backend/__pycache__/
+backend/.venv/
+.pytest_cache/
+**/.pytest_cache/
+.git/
+frontend/*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Local data and generated artifacts
+*.db
+*.sqlite
+*.sqlite3
+dataset/
+uploads/
+outputs/
+runtime-logs/
+
+*.py[cod]
